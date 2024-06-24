@@ -141,5 +141,9 @@ When you have finished testing the application, enter "quit" to stop the program
 
 Note: Some languages that require Unicode character sets may not be recognized in this simple console application.
 
+![image](https://github.com/moniquecardoso25/Azure-AI102/assets/140358716/834db128-2268-4794-888f-5cdcce9751af)
 
+![image](https://github.com/moniquecardoso25/Azure-AI102/assets/140358716/7bb22d1f-2e1d-4763-b646-1dd50810d651)
+
+![image](https://github.com/moniquecardoso25/Azure-AI102/assets/140358716/902c45e0-229b-401b-b407-e190c76cb9d6)
 
