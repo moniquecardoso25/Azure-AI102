@@ -102,42 +102,32 @@ python rest-client.py'''
 ## 4. Use an SDK
 You can write code that consumes Azure AI services REST APIs directly, but there are software development kits (SDKs) for many popular programming languages, including Microsoft C#, Python, Java, and Node.js. Using an SDK can greatly simplify development of applications that consume Azure AI services.
 
-In Visual Studio Code, expand the sdk-client folder under the C-Sharp or Python folder, depending on your language preference. Then run cd ../sdk-client to change into the relevant sdk-client folder.
+1. In Visual Studio Code, expand the sdk-client folder under the C-Sharp or Python folder, depending on your language preference. Then run cd ../sdk-client to change into the relevant sdk-client folder.
 
-Install the Text Analytics SDK package by running the appropriate command for your language preference:
+2. Install the Text Analytics SDK package by running the appropriate command for your language preference:
 
-C#
+'''pip install azure-ai-textanalytics==5.3.0'''
 
-dotnet add package Azure.AI.TextAnalytics --version 5.3.0
-Python
+3. View the contents of the sdk-client folder, and note that it contains a file for configuration settings:
 
-pip install azure-ai-textanalytics==5.3.0
-View the contents of the sdk-client folder, and note that it contains a file for configuration settings:
-
-C#: appsettings.json
 Python: .env
 Open the configuration file and update the configuration values it contains to reflect the endpoint and an authentication key for your Azure AI services resource. Save your changes.
-
 Note that the sdk-client folder contains a code file for the client application:
 
-C#: Program.cs
 Python: sdk-client.py
 Open the code file and review the code it contains, noting the following details:
 
-The namespace for the SDK you installed is imported
-Code in the Main function retrieves the endpoint and key for your Azure AI services resource - these will be used with the SDK to create a client for the Text Analytics service.
-The GetLanguage function uses the SDK to create a client for the service, and then uses the client to detect the language of the text that was entered.
-Return to the terminal, ensure you are in the sdk-client folder, and enter the following command to run the program:
+- The namespace for the SDK you installed is imported
+- Code in the Main function retrieves the endpoint and key for your Azure AI services resource - these will be used with the SDK to create a client for the Text Analytics service.
+- The GetLanguage function uses the SDK to create a client for the service, and then uses the client to detect the language of the text that was entered.
+4. Return to the terminal, ensure you are in the sdk-client folder, and enter the following command to run the program:
 
-C#
-
-dotnet run
 Python
 
-python sdk-client.py
-When prompted, enter some text and review the language that is detected by the service. For example, try entering "Goodbye", "Au revoir", and "Hasta la vista".
+'''python sdk-client.py'''
+5. When prompted, enter some text and review the language that is detected by the service. For example, try entering "Goodbye", "Au revoir", and "Hasta la vista".
 
-When you have finished testing the application, enter "quit" to stop the program.
+6. When you have finished testing the application, enter "quit" to stop the program.
 
 Note: Some languages that require Unicode character sets may not be recognized in this simple console application.
 
