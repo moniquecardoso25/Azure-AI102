@@ -24,7 +24,7 @@ Azure AI Services are cloud-based services that encapsulate artificial intellige
 
 1. Open the Azure portal at https://portal.azure.com, and sign in using the Microsoft account associated with your Azure subscription.
    
-3. In the top search bar, search for Azure AI services, select Azure AI Services, and create an Azure AI services multi-service account resource with the following settings:
+2. In the top search bar, search for Azure AI services, select Azure AI Services, and create an Azure AI services multi-service account resource with the following settings:
 - Subscription: Your Azure subscription
 - Resource group: Choose or create a resource group (if you are using a restricted subscription, you may not have permission to create a new resource group - use the one provided)
 - Region: Choose any available region
@@ -125,6 +125,7 @@ Open the code file and review the code it contains, noting the following details
 Python
 
 '''python sdk-client.py'''
+
 5. When prompted, enter some text and review the language that is detected by the service. For example, try entering "Goodbye", "Au revoir", and "Hasta la vista".
 
 6. When you have finished testing the application, enter "quit" to stop the program.
