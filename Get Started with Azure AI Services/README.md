@@ -1,5 +1,7 @@
 # Get Started with Azure AI Services
 
+Credits: Skillabe Lab - Azure AI 102
+
 ## 1. Clone the repository in Visual Studio Code
 
 You'll develop your code using Visual Studio Code. The code files for your app have been provided in a GitHub repo.
